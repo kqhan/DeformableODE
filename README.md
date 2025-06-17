@@ -47,11 +47,11 @@ The repository contains:
 ## Getting Started
 
 1. Clone the repository:
-
-   ```bash
+```bash
    git clone <repo-url>
    cd DeformableODE-main
 ```
+
 
 2. Explore the `src/data_generation` folder to generate datasets.
 
