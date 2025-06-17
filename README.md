@@ -61,13 +61,7 @@ The repository contains:
 
 ---
 
-## Dependencies
 
-* Python 3.x
-* Required Python libraries: (Specify libraries if known, e.g., numpy, torch, matplotlib)
-* Web dependencies included under `static/css` and `static/js` (Bulma CSS framework, FontAwesome icons, etc.)
-
----
 
 ## Documentation
 
