@@ -155,33 +155,78 @@
 </section>
 
 
+<!--Experiments-->
+<section class="section">
+    <div class="container is-max-widescreen">
+        <div class="rows">
+            <div class="rows is-centered ">
+                <div class="row is-full-width">
+                    <h2 class="title is-3"><span
+                            class="dvima">Evaluation Results</span></h2>
+
+                    <img src="assets/images/output2.png" class="interpolation-image"
+                         alt="" style="display: block; margin-left: auto; margin-right: auto"/>
+                    <br>
+                    <span style="font-size: 110%">
+                        <span style="font-weight: bold">Evaluation Mean Squared Error (MSE) per timestep.</span>
+                        Early timesteps show lower error which gradually increases as prediction horizon extends,
+                        reflecting the accumulation of uncertainty in longer-term forecasts.
+                    </span>
+                    <br>
+                    <br>
+                    <br>
+
+                    <span style="font-size: 110%">
+                       From the plot and the raw data, the MSE begins at approximately 0.035 at the first timestep and
+                        consistently decreases during the first 10 to 15 timesteps, reaching a minimum around 0.0033.
+                        This initial reduction suggests that the model quickly improves its short-term predictions as it
+                        assimilates temporal dynamics effectively.
+
+                        However, after this initial phase, the error starts to gradually increase, with notable growth
+                        after timestep 30, reaching peaks above 0.1 in some later timesteps. This behavior indicates
+                        that while the model performs well for short- to medium-term forecasts, prediction accuracy
+                        diminishes for longer horizons due to error accumulation and increased uncertainty in modeling
+                        complex dynamics far into the future.
+
+                        Overall, the timestep-wise evaluation highlights the strengths and limitations of the proposed
+                        model in capturing temporal dependencies. The model achieves high accuracy in the near term,
+                        with progressively less precise predictions as the forecasting horizon extends, which aligns
+                        with common challenges in sequential modeling of physical systems.
+                    </span>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 <!--Conclusion-->
-<!--<section class="section">-->
-<!--    <div class="container is-max-widescreen">-->
-<!--        <div class="rows">-->
-<!--            <div class="rows is-centered ">-->
-<!--                <div class="row is-full-width">-->
-<!--                    <h2 class="title is-3"><span-->
-<!--                            class="dvima">Conclusion</span></h2>-->
+<section class="section">
+    <div class="container is-max-widescreen">
+        <div class="rows">
+            <div class="rows is-centered ">
+                <div class="row is-full-width">
+                    <h2 class="title is-3"><span
+                            class="dvima">Conclusion</span></h2>
 
-<!--                    <p style="font-size: 125%">-->
-<!--                        In this work, we introduce a novel <i>multimodal</i> prompting formulation that converts diverse-->
-<!--                        robot manipulation tasks into a uniform sequence modeling problem. We instantiate this-->
-<!--                        formulation in VIMA-Bench, a diverse benchmark with multimodal tasks and systematic evaluation-->
-<!--                        protocols for generalization. We propose VIMA, a conceptually simple transformer-based agent-->
-<!--                        capable of solving tasks such as visual goal reaching, one-shot video imitation, and novel-->
-<!--                        concept grounding with a single model. Through comprehensive experiments, we show that VIMA-->
-<!--                        exhibits strong model scalability and zero-shot generalization. Therefore, we recommend our-->
-<!--                        agent design as a solid starting point for future work.-->
-<!--                    </p>-->
+                    <p style="font-size: 125%">
+                        In this work, we introduced Deformable NeuralODE, a novel continuous-time graph neural network
+                        framework designed to model the complex dynamics of deformable physical systems.
+                        By integrating a Transformer-based encoder with Neural Ordinary Differential Equations
+                        (Neural ODEs) that leverage explicit graph connectivity, our method captures both local
+                        interactions and long-range dependencies inherent in physical systems.
+                        This continuous-time modeling approach allows for flexible and accurate predictions over
+                        irregular time steps, which is crucial for realistic simulation and downstream applications.
+                    </p>
 
-<!--                </div>-->
-<!--            </div>-->
+                </div>
+            </div>
 
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+        </div>
+    </div>
+</section>
+
 
 
 <footer class="footer">

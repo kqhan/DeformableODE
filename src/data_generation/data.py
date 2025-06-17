@@ -497,7 +497,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict, origins: tor
             # Save camera images if enabled (save every timestep)
             if args_cli.save_camera and camera_output_dir is not None:
                 try:
-                    # Get RGB image data
+                    # Get RGB images data
                     rgb_data = camera.data.output["rgb"][0].cpu().numpy()  # Shape: (H, W, 3)
                     
                     # Handle different possible RGB data ranges
@@ -508,7 +508,7 @@ def run_simulator(sim: sim_utils.SimulationContext, entities: dict, origins: tor
                         # Data might already be in [0, 255] range
                         rgb_image = rgb_data.astype(np.uint8)
                     
-                    # Save image directly as RGB
+                    # Save images directly as RGB
                     image_filename = os.path.join(camera_output_dir, f"frame_{count:06d}.png")
                     pil_image = Image.fromarray(rgb_image, 'RGB')
                     pil_image.save(image_filename)

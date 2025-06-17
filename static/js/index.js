@@ -13,10 +13,10 @@ function preloadInterpolationImages() {
 }
 
 // function setInterpolationImage(i) {
-//   var image = interp_images[i];
-//   // image.ondragstart = function() { return false; };
-//   image.oncontextmenu = function() { return false; };
-//   $('#interpolation-image-wrapper').empty().append(image);
+//   var images = interp_images[i];
+//   // images.ondragstart = function() { return false; };
+//   images.oncontextmenu = function() { return false; };
+//   $('#interpolation-images-wrapper').empty().append(images);
 // }
 
 
