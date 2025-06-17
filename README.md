@@ -43,7 +43,6 @@ The repository contains:
 - **Static assets** for the web interface (HTML, CSS, JS).
 - **Documentation and media** including the project paper (`Deformable_NeurlODE.pdf`), images, and demo videos.
 
----
 
 ## Getting Started
 
@@ -83,9 +82,4 @@ For questions or contributions, please open an issue or contact the maintainer.
 
 ---
 
-Thank you for exploring the Deformable Neural ODE project!
 
-```
-
-If you want, I can also help generate a README for any specific subfolder like `src/data_generation` or `src/ODE_model` based on their smaller README files. Just let me know!
-```
